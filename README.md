@@ -53,25 +53,25 @@ Selanjutnya, proyek ini dengan tegas menunjukkan bahwa machine learning terbukti
 
 Berikan beberapa rekomendasi yang dapat dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
 
-1. Tinjau dan Optimalisasi Struktur Kompensasi:
-   Prioritas: MonthlyIncome dan MonthlyRate adalah faktor penting.
-   Aksi: Lakukan studi perbandingan gaji (benchmarking) dengan industri sejenis untuk memastikan bahwa pendapatan bulanan dan tarif yang diberikan kompetitif. Pertimbangkan penyesuaian gaji berkala, bonus, atau program insentif yang terkait dengan kinerja dan loyalitas. Fokus pada segmen karyawan di mana ketidakpuasan gaji menjadi pendorong utama attrition.
+1. Tinjau dan Optimalisasi Struktur Kompensasi
+- Prioritas: MonthlyIncome dan MonthlyRate adalah faktor penting.
+- Aksi: Lakukan studi perbandingan gaji (benchmarking) dengan industri sejenis untuk memastikan bahwa pendapatan bulanan dan tarif yang diberikan kompetitif. Pertimbangkan penyesuaian gaji berkala, bonus, atau program insentif yang terkait dengan kinerja dan loyalitas. Fokus pada segmen karyawan di mana ketidakpuasan gaji menjadi pendorong utama attrition.
 
 2. Kelola Beban Kerja dan Tingkatkan Keseimbangan Hidup-Kerja:
-   Prioritas: OverTime_Yes memiliki dampak signifikan.
-   Aksi: Kaji ulang kebijakan dan praktik lembur. Dorong budaya kerja yang menghargai keseimbangan hidup-kerja, misalnya dengan membatasi jam lembur yang tidak perlu, menyediakan fleksibilitas jam kerja, atau mempromosikan well-being karyawan. Identifikasi departemen atau tim yang sering lembur dan kaji ulang alokasi sumber daya mereka.
+- Prioritas: OverTime_Yes memiliki dampak signifikan.
+- Aksi: Kaji ulang kebijakan dan praktik lembur. Dorong budaya kerja yang menghargai keseimbangan hidup-kerja, misalnya dengan membatasi jam lembur yang tidak perlu, menyediakan fleksibilitas jam kerja, atau mempromosikan well-being karyawan. Identifikasi departemen atau tim yang sering lembur dan kaji ulang alokasi sumber daya mereka.
 
 3. Kembangkan Program Retensi Berbasis Demografi dan Pengalaman:
-   Prioritas: Age dan TotalWorkingYears adalah faktor penting.
-   Aksi: Merancang program retensi yang disesuaikan untuk berbagai kelompok usia dan tingkat pengalaman. Misalnya, untuk karyawan yang lebih senior atau dengan masa kerja lama, fokus pada pengembangan karir, kesempatan mentoring, atau persiapan pensiun yang menarik. Untuk kelompok usia tertentu yang menunjukkan attrition tinggi, pahami kebutuhan dan aspirasi mereka.
+- Prioritas: Age dan TotalWorkingYears adalah faktor penting.
+- Aksi: Merancang program retensi yang disesuaikan untuk berbagai kelompok usia dan tingkat pengalaman. Misalnya, untuk karyawan yang lebih senior atau dengan masa kerja lama, fokus pada pengembangan karir, kesempatan mentoring, atau persiapan pensiun yang menarik. Untuk kelompok usia tertentu yang menunjukkan attrition tinggi, pahami kebutuhan dan aspirasi mereka.
 
 4. Perbaiki Lingkungan Kerja dan Kondisi Harian:
-   Prioritas: DailyRate dan DistanceFromHome memiliki pengaruh.
-   Aksi: Evaluasi elemen-elemen yang memengaruhi pengalaman kerja harian. Untuk DailyRate, pastikan kompensasi harian adil. Untuk DistanceFromHome, pertimbangkan opsi kerja fleksibel (misalnya, hybrid atau remote jika memungkinkan), tunjangan transportasi, atau fasilitas yang dapat mengurangi beban komuter.
+- Prioritas: DailyRate dan DistanceFromHome memiliki pengaruh.
+- Aksi: Evaluasi elemen-elemen yang memengaruhi pengalaman kerja harian. Untuk DailyRate, pastikan kompensasi harian adil. Untuk DistanceFromHome, pertimbangkan opsi kerja fleksibel (misalnya, hybrid atau remote jika memungkinkan), tunjangan transportasi, atau fasilitas yang dapat mengurangi beban komuter.
 
 5. Perkuat Ikatan Karyawan dan Dukungan Manajerial:
-   Prioritas: YearsAtCompany dan NumCompaniesWorked serta potensi dari YearsInCurrentRole dan YearsWithCurrManager.
-   Aksi: Lakukan check-in reguler dengan karyawan, terutama mereka yang telah lama berada di perusahaan atau sering berganti perusahaan. Fokus pada pengembangan hubungan yang kuat antara karyawan dan manajer (YearsWithCurrManager) serta peluang promosi dan pengembangan karir yang jelas (YearsSinceLastPromotion, YearsInCurrentRole).
+- Prioritas: YearsAtCompany dan NumCompaniesWorked serta potensi dari YearsInCurrentRole dan YearsWithCurrManager.
+- Aksi: Lakukan check-in reguler dengan karyawan, terutama mereka yang telah lama berada di perusahaan atau sering berganti perusahaan. Fokus pada pengembangan hubungan yang kuat antara karyawan dan manajer (YearsWithCurrManager) serta peluang promosi dan pengembangan karir yang jelas (YearsSinceLastPromotion, YearsInCurrentRole).
 
 6. Manfaatkan Dashboard untuk Intervensi Proaktif:
-   Aksi: Tim HR harus secara aktif menggunakan business dashboard yang telah dibangun untuk memantau indikator attrition secara berkelanjutan dan mengidentifikasi karyawan yang diprediksi berisiko tinggi untuk keluar. Lakukan wawancara retensi, tawarkan solusi yang disesuaikan (misalnya, pelatihan, perubahan peran, atau peningkatan kompensasi) sebelum karyawan memutuskan untuk keluar.
+- Aksi: Tim HR harus secara aktif menggunakan business dashboard yang telah dibangun untuk memantau indikator attrition secara berkelanjutan dan mengidentifikasi karyawan yang diprediksi berisiko tinggi untuk keluar. Lakukan wawancara retensi, tawarkan solusi yang disesuaikan (misalnya, pelatihan, perubahan peran, atau peningkatan kompensasi) sebelum karyawan memutuskan untuk keluar.
