@@ -28,14 +28,57 @@ Proyek ini mencakup seluruh tahapan proses data science, antara lain:
 Sumber data: [Data Karyawan Jaya Jaya Maju](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
 
 Setup environment:
+- Proyek ini dapat dijalankan dengan mudah menggunakan Google Colabolatory (Colab), yang menyediakan *environment* siap pakai dengan sebagian besar dependensi yang sudah **terinstal**.
+- Namun jika ingin menjalankan proyek ini secara local di komputer pribadi, disarankan untuk menggunakan virtual environment untuk mengelola dependensi proyek:
 
-```python
-pip install -r requirements.txt
+**1. Membuat Virtual Environment (opsional, untuk lokal)**:
+Buka terminal atau command prompt, lalu navigasikan ke direktori proyek Anda. Jalankan perintah berikut:
+
+```Bash
+python -m venv venv
 ```
+
+**2. Mengaktifkan Virtual Environment (opsional, untuk lokal)** :
+- Windows:
+```Bash
+.\venv\Scripts\activate
+```
+
+- macOS / Linux:
+```Bash
+    source venv/bin/activate
+```
+
+**3. Instalasi Dependensi** :
+- Baik di Google Colab maupun di environment lokal (setelah mengaktifkan virtual environment), Anda mungkin perlu menginstal beberapa library tambahan yang tidak tersedia secara default. Pastikan Anda berada di direktori proyek dan jalankan perintah berikut:
+```Bash
+    pip install -r requirements.txt
+```
+- Catatan: Jika ada library yang perlu diinstal di Colab, Anda bisa menambahkannya di sel kode awal notebook Colab Anda dengan:
+```Bash
+!pip install nama_library
+```
+- Catatan: Untuk menjalankan prediction notebook dibutuhkan file yang ada di folder model.
+
+## **Cara Menjalankan Proyek**
+**Menggunakan Google Colaboratory (Direkomendasikan)**
+1. **Buka Notebook** : Unggah atau buka file notebook .ipynb proyek ini di Google Colab.
+2. **Jalankan Semua Sel** : Pastikan Anda menjalankan semua sel kode secara berurutan, dari atas ke bawah. Ini akan memproses data, melatih model (jika ada), dan menyiapkan dashboard.
+3. **Akses Dashboard** : Untuk mengakses dashboard di Looker Studio, gunakan tautan yang disediakan di bagian "Business Dashboard" di bawah ini.
+
+## **Menjalankan Secara Lokal (Opsional)**
+
+Jika telah melakukan langkah-langkah Setup Environment di atas untuk menjalankan proyek secara lokal:
+1. Pastikan Virtual Environment Aktif: Di terminal atau command prompt, pastikan Anda telah mengaktifkan virtual environment.
+2. Jalankan Skrip Utama: Navigasikan ke direktori utama proyek Anda. Kemudian, jalankan file Python utama proyek Anda. Jika file utama Anda adalah main.py, app.py, atau dashboard.py (sesuaikan dengan nama file Anda):
+```Bash
+    python nama_file_utama_anda.py
+```
+3. Akses Dashboard: Setelah skrip berhasil dijalankan, jika dashboard Anda di-hosting secara lokal, alamat akses biasanya akan ditampilkan di terminal (misalnya, http://127.0.0.1:8050/ atau http://localhost:5000/). Namun, untuk dashboard Looker Studio, Anda cukup mengakses tautan  yang di [Employee Attrition Dasboard Jaya Jaya Maju](https://lookerstudio.google.com/reporting/5b531828-11a6-45d6-8dc6-421703777b92) berikan di bagian "Business Dashboard".
 
 ## Business Dashboard
 
-Bisnis dashboard yang dibuat menggunakan Looker Studio dirancang untuk memberikan visibilitas dan insight yang cepat kepaada Manajemen dan Departemen HR tentang faktor-faktor attriotion di Jaya Jaya Maju. Saat ini dashboard dapat diakses melalui [Employee Attrition Dasboard Jaya Jaya Maju](https://lookerstudio.google.com/reporting/5b531828-11a6-45d6-8dc6-421703777b92). Dashboard ini menampilkan Dashboard akan menampilkan fitur-fitur utama berikut:
+*Business dashboard* yang dibuat menggunakan Looker Studio dirancang untuk memberikan visibilitas dan *insight* yang cepat kepaada Manajemen dan Departemen HR tentang faktor-faktor attriotion di Jaya Jaya Maju. Saat ini dashboard dapat diakses melalui [Employee Attrition Dasboard Jaya Jaya Maju](https://lookerstudio.google.com/reporting/5b531828-11a6-45d6-8dc6-421703777b92). Dashboard ini menampilkan Dashboard akan menampilkan fitur-fitur utama berikut:
 - Ringkasan Tingkat Attrition: Menampilkan metrik utama seperti attrition rate, jumlah karyawan attrition, dan jumlah karyawan keseluruhan.
 - Faktor Pendorong Attrition: Grafik yang menunjukkan fitur yang memengaruhi attrition (berdasarkan features importance model). Pengguna dapat mengeksplorasi bagaimana faktor-faktor seperti OverTime, MonthlyIncome, atau Age berkorelasi dengan attrition.
 - Analisis Demografi Karyawan: Visualisasi distribusi karyawan berdasarkan departemen dan peran pekerjaan untuk mengidentifikasi segmen karyawan yang berbeda.
@@ -45,9 +88,16 @@ Bisnis dashboard yang dibuat menggunakan Looker Studio dirancang untuk memberika
 
 ## Conclusion
 
-Proyek ini telah berhasil mengatasi permasalahan attrition rate di Jaya Jaya Maju dengan implementasi solusi data science yang komprehensif. Analisis data yang dilakukan mengungkapkan bahwa MonthlyIncome, Age, MonthlyRate, dan OverTime_Yes adalah faktor-faktor paling signifikan yang berkontribusi terhadap kecenderungan keluarnya karyawan, memberikan pemahaman jelas mengenai akar penyebab attrition. Konfirmasi ini secara langsung menjawab kebutuhan perusahaan akan identifikasi faktor pendorong utama.
+Proyek ini telah berhasil mengatasi permasalahan attrition rate di Jaya Jaya Maju dengan implementasi solusi data science yang komprehensif. Analisis data yang dilakukan mengungkapkan bahwa **karyawan yang cenderung mengalami attrition memiliki karakteristik umum sebagai berikut**:
 
-Selanjutnya, proyek ini dengan tegas menunjukkan bahwa machine learning terbukti sangat efektif dalam memprediksi probabilitas attrition karyawan. Model yang dikembangkan memungkinkan identifikasi proaktif terhadap karyawan berisiko tinggi, suatu kapabilitas yang esensial untuk memitigasi biaya rekrutmen dan menjaga produktivitas. Seluruh artefak proyek telah disiapkan untuk integrasi ke business dashboard yang akan datang, mendukung pengambilan keputusan strategis yang berkelanjutan dan berbasis data.
+- **Pendapatan dan Tingkat Gaji Rendah**: Karyawan dengan MonthlyIncome dan MonthlyRate yang lebih rendah memiliki kecenderungan lebih tinggi untuk keluar. Ini menunjukkan bahwa kompensasi menjadi faktor pendorong signifikan.
+- **Usia Lebih Muda**: Karyawan dengan Age yang lebih muda (terutama di rentang awal karir) menunjukkan tingkat attrition yang lebih tinggi, kemungkinan karena mencari peluang pertumbuhan atau pengalaman baru.
+- **Sering Lembur** (OverTime_Yes): Karyawan yang sering bekerja lembur memiliki probabilitas attrition yang jauh lebih tinggi, mengindikasikan masalah keseimbangan hidup-kerja yang serius.
+- **Masa Kerja Pendek di Perusahaan/Peran**: Faktor seperti YearsAtCompany, YearsInCurrentRole, YearsWithCurrManager, dan NumCompaniesWorked juga berperan, menunjukkan bahwa kurangnya stabilitas, kesempatan promosi, atau hubungan manajerial yang buruk dapat memicu keluarnya karyawan.
+
+- Konfirmasi ini secara langsung menjawab kebutuhan perusahaan akan identifikasi faktor pendorong utama dan karakteristik karyawan berisiko.
+
+- Selanjutnya, proyek ini menunjukkan bahwa machine learning terbukti sangat efektif dalam memprediksi probabilitas attrition karyawan. Model yang dikembangkan memungkinkan identifikasi proaktif terhadap karyawan berisiko tinggi, suatu kapabilitas yang esensial untuk memitigasi biaya rekrutmen dan menjaga produktivitas. Seluruh artefak proyek telah disiapkan untuk integrasi ke business dashboard yang akan datang, mendukung pengambilan keputusan strategis yang berkelanjutan dan berbasis data.
 
 ### Rekomendasi Action Items (Optional)
 
